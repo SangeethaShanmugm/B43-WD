@@ -10,7 +10,7 @@
 //     return output
 // }
 
-//function definition
+//function definition /declaration
 function add(a, b, c) {
   return a + b + c;
 }
@@ -35,6 +35,62 @@ console.log(add(5, 5, 5));
 // }
 //function expression
 var b = function () {
-  console.log("b called");
+  console.log("Hello");
 };
 
+b();
+
+//ES6
+//arrow function
+
+let addNum = (a, b) => a + b;
+// function add(a) {
+//   return a
+// }
+// let a  =(a) => a
+console.log(addNum(2, 5));
+
+//greater num a|b
+let largeNum = (a, b) => {
+  if (a > b) return "a is greater";
+  else return "b is greater";
+};
+
+console.log(largeNum(5, 10));
+//`` - back tick - ` ${var}`
+function isEven(num) {
+  let out;
+  if (num % 2 == 0) {
+    out = `Number ${num} is even`;
+  } else {
+    out = `Number ${num} is odd`;
+  }
+  return out;
+}
+
+console.log(isEven(5));
+console.log(isEven(10));
+
+//arrow function
+let isEvenNum = (num) => {
+  if (num % 2 == 0) {
+    out = `Number ${num} is even`;
+  } else {
+    out = `Number ${num} is odd`;
+  }
+  return out;
+};
+
+console.log(isEvenNum(5));
+
+//IIFE - Immediately invoked function expression
+
+function hello() {
+  console.log("Hello Everyone");
+}
+hello();
+
+//IIFE
+(function () {
+  console.log("Hello Everyone");
+})();
