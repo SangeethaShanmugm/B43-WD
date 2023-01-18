@@ -10,6 +10,29 @@
 //     return output
 // }
 
+// var a => declaration
+// a = 10 =>  assignment
+
+var a = 30;
+var b = 50;
+if (a > b) {
+  console.log("A is greater");
+} else {
+  console.log("B is greater");
+}
+
+function largestNum(a, b) {
+  let result;
+  if (a > b) {
+    result = `A-${a} is greater`;
+  } else {
+    result = `B-${b} is greater`;
+  }
+  return result;
+}
+
+console.log(largestNum(50, 100));// function call
+
 //function definition /declaration
 function add(a, b, c) {
   return a + b + c;

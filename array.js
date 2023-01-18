@@ -135,5 +135,10 @@ console.log(c.concat(b)); //["a", "b", "c", 1, 2, "d", "e", "f"]
 console.log(b.concat(c)); // [2, "d", "e", "f", "a", "b", "c", 1]
 
 var b = [2, "d", "e", "f"];
-console.log(b.reverse());  ['f', 'e', 'd', 2]
- 
+console.log(b.reverse());
+["f", "e", "d", 2][(2, "d", "e", "f")];
+k = 2;
+
+let x = [4, 6, 1, 9];
+let z = x.sort();
+console.log(z);
